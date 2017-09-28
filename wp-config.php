@@ -19,10 +19,10 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-define('DB_NAME',       'gidds987');
+define('DB_NAME',       'ebdb');
 define('DB_USER',       'nitrock');
 define('DB_PASSWORD',   'zeBy8lUvv6Hr');
-define('DB_HOST',       'gidds-tech.cpqrhqnmp2kb.us-east-1.rds.amazonaws.com:3306');
+define('DB_HOST',       'aai91vwqaphdqq.cpqrhqnmp2kb.us-east-1.rds.amazonaws.com');
 
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
@@ -68,7 +68,7 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', true);
-define('WP_DEBUG_LOG', true)
+define('WP_DEBUG_LOG', true);
 
 /* That's all, stop editing! Happy blogging. */
 
