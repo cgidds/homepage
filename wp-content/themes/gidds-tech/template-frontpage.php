@@ -15,9 +15,7 @@ get_header(); ?>
 
 			if ( ! has_action( 'onepress_frontpage_section_parts' ) ) {
 
-				$sections = apply_filters( 'onepress_frontpage_sections_order', array(
-                    'hero', 'features', 'about', 'services', 'videolightbox', 'gallery', 'counter', 'team',  'news', 'contact'
-                ) );
+				$sections = apply_filters( 'onepress_frontpage_sections_order', array('hero') );
 
 				foreach ( $sections as $section ){
                     /**
@@ -41,6 +39,10 @@ get_header(); ?>
 			} else {
 				do_action( 'onepress_frontpage_section_parts' );
 			}
+            
+            // Portfolio
+			echo "<h3 style='margin-top: 30px; text-align: center; padding-bottom: 15px;'>Some of my latest work</h3>";
+            echo do_shortcode("[huge_it_portfolio id='1']");
 
             do_action( 'onepress_frontpage_after_section_parts' );
 
