@@ -1154,6 +1154,7 @@ h6, p, ul, ol, dl, blockquote, pre {
   background: #111111;
   color: #BBBBBB;
   font-size: 14px;
+  margin-top: 75px;
 }
 .site-footer a {
   color: #03c4eb;
@@ -3780,4 +3781,72 @@ img.mfp-img {
 }
 .owl-carousel .owl-buttons .owl-next .lg-icon::before {
   content: "\e095";
+}
+
+/* Gidds Technology Customizations
+------------------------------------*/
+#portfolio {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#portfolio h3 {
+    padding-bottom: 15px;
+    line-height: 0.5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#portfolio h3 span {
+  display: inline-block;
+  position: relative;  
+}
+
+#portfolio h3 span:before,
+#portfolio h3 span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #777777;
+  top: 0;
+  width: 200px;
+}
+
+#portfolio h3 span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+#portfolio h3 span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.portfolio-items {
+    width: 100%;
+    float: left;
+}
+
+.portfolio-item {
+    display: inline-block;
+    max-width: 300px;
+    height: auto;
+}
+
+.portfolio-item:nth-child(2),
+.portfolio-item:nth-child(3) {
+    padding-left: 15px;
+}
+
+.portfolio-thumb {
+
+}
+
+.portfolio-thumb img:nth-child(2),
+.portfolio-thumb img:nth-child(3) {
+    min-height: 161px;
+}
+
+.portfolio-name {
+
 }
