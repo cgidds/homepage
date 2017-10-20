@@ -14,15 +14,32 @@
  * * ABSPATH
  *
  * @link https://codex.wordpress.org/Editing_wp-config.php
- *
+ * 
  * @package WordPress
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-define('DB_NAME',       'ebdb');
-define('DB_USER',       'nitrock');
-define('DB_PASSWORD',   'zeBy8lUvv6Hr');
-define('DB_HOST',       'aai91vwqaphdqq.cpqrhqnmp2kb.us-east-1.rds.amazonaws.com');
+
+$host = $_SERVER['HTTP_HOST']; // retrieve domain name
+
+if ($host == 'giddsdummy.tech:8080') {
+
+    define('DB_NAME',       'ebdb');
+    define('DB_USER',       'vagrant');
+    define('DB_PASSWORD',   '');
+    define('DB_HOST',       'localhost');
+
+} elseif (($host == 'gidds.tech') || ($host == 'www.giddstech.com')) {
+
+    define('DB_NAME',       'ebdb');
+    define('DB_USER',       'nitrock');
+    define('DB_PASSWORD',   'zeBy8lUvv6Hr');
+    define('DB_HOST',       'aai91vwqaphdqq.cpqrhqnmp2kb.us-east-1.rds.amazonaws.com');
+
+} else {
+
+    echo "Should NOT be here.";
+}
 
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
